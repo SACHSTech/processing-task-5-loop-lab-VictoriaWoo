@@ -135,22 +135,67 @@ public class Sketch extends PApplet {
     }
   }
 
-  /**
-   * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
-   */
   public void draw_section5(){
-   
+    int intX5 = 0;
+    int intY5 = 0;
+ 
+    for(int intColumn5 = 0; intColumn5 < 300; intColumn5 += 10){
+     for(int intRow5 = 300 - intColumn5; intRow5 < 300; intRow5 += 10){
+       intX5 = intRow5 + 3;
+       intY5 = intColumn5 + 3;
+ 
+       fill(255);
+       noStroke();
+       rect(intX5, intY5, 5, 5);
+     }
+    }
   }
 
   public void draw_section6(){
-
+    int intX6 = 0;
+    int intY6 = 0;
+ 
+    for(int intColumn6 = 0; intColumn6 <= 300; intColumn6 += 10){
+     for(int intRow6 = 0; intRow6 < intColumn6; intRow6 +=10){
+       intX6 = intRow6 + 3 + 300;
+       intY6 = intColumn6 - 3 - 4;
+ 
+       fill(255);
+       noStroke();
+       rect(intX6, intY6, 5, 5);
+     }
+    }
   }
 
   public void draw_section7(){
+  int intX7 = 0;
+  int intY7 = 0;
 
+  for(int intColumn7 = 0; intColumn7 < 300; intColumn7 += 10){
+    for(int intRow7 = 300 - intColumn7; intRow7 > 0; intRow7 -= 10){
+      intX7 = intRow7 - 3 -5 + 600;
+      intY7 = intColumn7 + 3;
+
+      fill(255);
+      noStroke();
+      rect(intX7, intY7, 5, 5);
+    }
+   }
   }
   
   public void draw_section8(){
-
+    int intX8 = 0;
+    int intY8 = 0;
+ 
+    for(int intRow8 = 0; intRow8 <= 300; intRow8 += 10){
+     for(int intColumn8 = 0; intColumn8 <= intRow8; intColumn8 +=10){
+       intX8 = intRow8 + 3+ 900;
+       intY8 = intColumn8 + 3;
+ 
+       fill(255);
+       noStroke();
+       rect(intX8, intY8, 5, 5);
+     }
+    }
   }
 }
